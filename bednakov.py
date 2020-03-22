@@ -30,7 +30,7 @@ class config:
 def banner():
 	os.system('clear')
 	print  color.YELLOW + """
-____  _____ ____  _   _    _    _  _______     __
+ ____  _____ ____  _   _    _    _  _______     __
 | __ )| ____|  _ \| \ | |  / \  | |/ / _ \ \   / /
 |  _ \|  _| | | | |  \| | / _ \ | ' / | | \ \ / /
 | |_) | |___| |_| | |\  |/ ___ \| . \ |_| |\ V /
@@ -55,7 +55,7 @@ def main():
 		print color.YELLOW + "[+] " + color.END + "Phone number information gathering"
 		print "--------------------------------------"
 		time.sleep(0.2)
-
+ .
 		if country_code == "":
 			print " - Getting Country		[ " + color.RED + "FAILED " + color.END + "]"
 		else:
