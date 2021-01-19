@@ -52,51 +52,51 @@ def main():
 		carrier = obj['carrier']
 		line_type = obj['line_type']
 
-		print( color.YELLOW + "[+] " + color.END + "Phone number information gathering")
+		print( color.YELLOW + "[+] " + color.END + "Сбор информации о номере телефона")
 		print( "--------------------------------------")
 		time.sleep(0.2)
  
 		if country_code == "":
-			print(" - Getting Country		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - Получение страны		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print(" - Getting Country		[ " + color.GREEN + "OK " + color.END + "]")
+			print(" - Получение страны		[ " + color.GREEN + "OK " + color.END + "]")
 
 		time.sleep(0.2)
 		if country_name == "":
-			print(" - Getting Country Name		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - Получение названия страны		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print(" - Getting Country Name		[ " + color.GREEN + "OK " + color.END + "]")
+			print(" - Получение названия страны		[ " + color.GREEN + "OK " + color.END + "]")
 
 		time.sleep(0.2)
 		if location == "":
-			print(" - Getting Location		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - Получение местоположения		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print( " - Getting Location		[ " + color.GREEN + "OK " + color.END + "]")
+			print( " - Получение местоположения		[ " + color.GREEN + "OK " + color.END + "]")
 
 		time.sleep(0.2)
 		if carrier == "":
-			print(" - Getting Carrier		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - Получение провайдера		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print(" - Getting Carrier		[ " + color.GREEN + "OK " + color.END + "]")
+			print(" - Получение провайдера		[ " + color.GREEN + "OK " + color.END + "]")
 
 		time.sleep(0.2)
 		if line_type == None:
-			print(" - Getting Device		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - Получение устройства		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print(" - Getting Device		[ " + color.GREEN + "OK " + color.END + "]")
+			print(" - Получение устройства		[ " + color.GREEN + "OK " + color.END + "]")
 
 		
-		print( color.YELLOW + "[+] " + color.END + "Information Output")
+		print( color.YELLOW + "[+] " + color.END + "Вывод информации")
 		print("--------------------------------------")
-		print( " - Phone number: " + str(number))
-		print(" - Country: " + str(country_code))
+		print( " - Телефонный номер: " + str(number))
+		print(" - Страна: " + str(country_code))
 		print(" - Country Name: " + str(country_name))
-		print( " - Location: " + str(location))
-		print( " - Carrier: " + str(carrier))
-		print(" - Device: " + str(line_type))
+		print( " - Расположение: " + str(location))
+		print( " - провайдер: " + str(carrier))
+		print(" - устройства: " + str(line_type))
 	else:
-		print("[?] Usage:")
-		print("	./%s <phone-number>" % (sys.argv[0]))
-		print( "	./%s +13213707446" % (sys.argv[0]))
+		print("[?] Применение:")
+		print("	python3 %s <phone-number>" % (sys.argv[0]))
+		print( "python3 %s +13213707446" % (sys.argv[0]))
 
 main()
