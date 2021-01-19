@@ -97,6 +97,6 @@ def main():
 	else:
 		print("[?] Применение:")
 		print("	python3 %s <phone-number>" % (sys.argv[0]))
-		print( "python3 %s +13213707446" % (sys.argv[0]))
+		print( " \n Пример: \n python3 %s +13213707446" % (sys.argv[0]))
 
 main()
