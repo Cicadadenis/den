@@ -29,14 +29,7 @@ class config:
 	       
 def banner():
 	os.system('clear')
-	print( color.YELLOW + """
- ____  _____ ____  _   _    _    _  _______     __
-| __ )| ____|  _ \| \ | |  / \  | |/ / _ \ \   / /
-|  _ \|  _| | | | |  \| | / _ \ | ' / | | \ \ / /
-| |_) | |___| |_| | |\  |/ ___ \| . \ |_| |\ V /
-|____/|_____|____/|_| \_/_/   \_\_|\_\___/  \_/
-	Version - dev-1.0                 
-	""" + color.END)
+
 
 def main():
 	banner()
@@ -63,15 +56,15 @@ def main():
 
 		time.sleep(0.2)
 		if country_name == "":
-			print(" - Получение названия страны		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - названия страны		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print(" - Получение названия страны		[ " + color.GREEN + "OK " + color.END + "]")
+			print(" - названия страны		[ " + color.GREEN + "OK " + color.END + "]")
 
 		time.sleep(0.2)
 		if location == "":
-			print(" - Получение местоположения		[ " + color.RED + "FAILED " + color.END + "]")
+			print(" - местоположения		[ " + color.RED + "FAILED " + color.END + "]")
 		else:
-			print( " - Получение местоположения		[ " + color.GREEN + "OK " + color.END + "]")
+			print( " - местоположения		[ " + color.GREEN + "OK " + color.END + "]")
 
 		time.sleep(0.2)
 		if carrier == "":
