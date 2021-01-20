@@ -52,7 +52,7 @@ def main():
 		carrier = obj['carrier']
 		line_type = obj['line_type']
 
-		print( color.YELLOW + "[+] " + color.END + "Сбор информации о номере телефона")
+		#print( color.YELLOW + "[+] " + color.END + "Сбор информации о номере телефона")
 		print( "--------------------------------------")
 		time.sleep(0.2)
  
